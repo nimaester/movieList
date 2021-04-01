@@ -1,22 +1,12 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getMovies } from "./actions/movieActions";
+import React from "react";
+import MovieList from "./MovieList";
+import Nav from "./Nav";
 
 const App = () => {
-  const dispatch = useDispatch();
-  const { popular, upcoming, nowPlaying } = useSelector((state) => state);
-
-  useEffect(() => {
-    dispatch(getMovies());
-  }, [dispatch]);
-
   return (
     <div className='App'>
-      {true && (
-        <div>
-          <h1>hi</h1>
-        </div>
-      )}
+      <Nav />
+      <MovieList />
     </div>
   );
 };
