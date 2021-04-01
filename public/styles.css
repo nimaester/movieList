@@ -42,3 +42,7 @@ button:hover {
 .movie-poster {
   width: 20rem;
 }
+
+.movie:hover {
+  cursor: pointer;
+}
