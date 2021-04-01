@@ -1,4 +1,4 @@
-export const imageURL = () => "https://image.tmdb.org/t/p/w1280";
+export const imageURL = "https://image.tmdb.org/t/p/w1280";
 export const searchURL = () =>
   `https://api.themoviedb.org/3/search/company?api_key=${process.env.REACT_APP_TMDB_API}&query=`;
 export const popularURL = () =>

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Movie from "./Movie";
 import { useSelector, useDispatch } from "react-redux";
 import { getMovies } from "./actions/movieActions";
 
@@ -13,8 +14,12 @@ const MovieList = () => {
   return (
     <section>
       {nowPlaying.length > 0 && (
-        <div>
-          <h1>hi</h1>
+        <div className='movie-list'>
+          {popular.map((movie) => (
+            <div>
+              <Movie movie={movie} key={movie.id} id={movie.id} />
+            </div>
+          ))}
         </div>
       )}
     </section>
