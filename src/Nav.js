@@ -6,7 +6,7 @@ const Nav = () => {
       <ul className='nav'>
         <li>LOGO</li>
         <form>
-          <input placeholder='Search....' />
+          <input placeholder='Type a Movie title' />
           <button>Search</button>
         </form>
       </ul>

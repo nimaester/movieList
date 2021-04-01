@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getMovies } from "./actions/movieActions";
+
 const MovieList = () => {
   const dispatch = useDispatch();
   const { popular, upcoming, nowPlaying } = useSelector((state) => state);

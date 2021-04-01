@@ -17,3 +17,18 @@ section {
 li {
   list-style: none;
 }
+
+input {
+  border: solid black 0.1px;
+  padding: 0.5rem 0.5rem;
+  width: 20rem;
+}
+
+button {
+  background-color: slategrey;
+  padding: 0.5rem 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
