@@ -14,9 +14,10 @@ const MovieList = () => {
   return (
     <section>
       {nowPlaying.length > 0 && (
-        <div className='movie-list'>
+        <div>
+          <h1>Popular</h1>
           {popular.map((movie) => (
-            <div>
+            <div className='movie-list'>
               <Movie movie={movie} key={movie.id} id={movie.id} />
             </div>
           ))}
