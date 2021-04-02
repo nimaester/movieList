@@ -15,12 +15,38 @@ const MovieList = () => {
     <section>
       {nowPlaying.length > 0 && (
         <div>
-          <h1>Popular</h1>
-          {popular.map((movie) => (
+          <div className='movies'>
+            <h1 className='movie-type'>Now Playing</h1>
             <div className='movie-list'>
-              <Movie movie={movie} key={movie.id} id={movie.id} />
+              {nowPlaying.map((movie) => (
+                <div className='movie-list'>
+                  <Movie movie={movie} key={movie.id} id={movie.id} />
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          <div className='movies'>
+            <h1 className='movie-type'>Upcoming Movies</h1>
+            <div className='movie-list'>
+              {upcoming.map((movie) => (
+                <div className='movie-list'>
+                  <Movie movie={movie} key={movie.id} id={movie.id} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className='movies'>
+            <h1 className='movie-type'>Popular Movies</h1>
+            <div className='movie-list'>
+              {popular.map((movie) => (
+                <div className='movie-list'>
+                  <Movie movie={movie} key={movie.id} id={movie.id} />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       )}
     </section>

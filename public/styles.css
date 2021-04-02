@@ -33,6 +33,10 @@ button:hover {
   cursor: pointer;
 }
 
+.movie-type {
+  margin: 2rem 0rem;
+}
+
 .movie-list {
   display: flex;
   flex-wrap: wrap;
