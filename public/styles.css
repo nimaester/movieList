@@ -43,7 +43,7 @@ button:hover {
 .movie-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .movie-poster {
@@ -54,5 +54,14 @@ button:hover {
   cursor: pointer;
 }
 
+.movie {
+  background-color: slategray;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: slategray;
+}
+
 .movie p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
