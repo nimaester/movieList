@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 nav,
@@ -34,7 +36,8 @@ button:hover {
 }
 
 .movie-type {
-  margin: 2rem 0rem;
+  margin: 4rem 0rem;
+  font-size: 3rem;
 }
 
 .movie-list {
@@ -49,4 +52,7 @@ button:hover {
 
 .movie:hover {
   cursor: pointer;
+}
+
+.movie p {
 }

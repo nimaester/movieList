@@ -18,7 +18,7 @@ const MovieList = () => {
           <div className='movies'>
             <h1 className='movie-type'>Now Playing</h1>
             <div className='movie-list'>
-              {nowPlaying.map((movie) => (
+              {nowPlaying.slice(0, 6).map((movie) => (
                 <div className='movie-list'>
                   <Movie movie={movie} key={movie.id} id={movie.id} />
                 </div>
@@ -29,7 +29,7 @@ const MovieList = () => {
           <div className='movies'>
             <h1 className='movie-type'>Upcoming Movies</h1>
             <div className='movie-list'>
-              {upcoming.map((movie) => (
+              {upcoming.slice(0, 6).map((movie) => (
                 <div className='movie-list'>
                   <Movie movie={movie} key={movie.id} id={movie.id} />
                 </div>
@@ -40,7 +40,7 @@ const MovieList = () => {
           <div className='movies'>
             <h1 className='movie-type'>Popular Movies</h1>
             <div className='movie-list'>
-              {popular.map((movie) => (
+              {popular.slice(0, 6).map((movie) => (
                 <div className='movie-list'>
                   <Movie movie={movie} key={movie.id} id={movie.id} />
                 </div>
