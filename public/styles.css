@@ -47,7 +47,7 @@ button:hover {
 }
 
 .movie-poster {
-  width: 20rem;
+  width: 15rem;
 }
 
 .movie:hover {
@@ -55,7 +55,6 @@ button:hover {
 }
 
 .movie {
-  background-color: slategray;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: slategray;
